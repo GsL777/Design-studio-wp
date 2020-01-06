@@ -1,0 +1,25 @@
+.header {
+    background-image: url(../img/architecture-bed-bedroom.jpg);
+    background-attachment: fixed;/*height: 100%;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 101vh;
+    margin-bottom: 50px;
+    width: 100%;
+    @include flexbox();
+    @extend %flex-direction-column;
+    @extend %justify-content-center;
+    @extend %align-items-center;
+    h1 {
+    	text-align: center;
+        text-transform: uppercase;
+        @include animate(all, .3s);
+        &:hover {
+            @include transform(scale(1.5));
+        }
+    }
+    h4 {
+    	text-align: center;
+    }
+}
