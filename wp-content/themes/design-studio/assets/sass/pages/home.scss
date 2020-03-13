@@ -1,0 +1,40 @@
+/*
+    ===================================
+        PAGE-CONTENT
+    ===================================
+*/
+
+.page-content {
+    position: relative;
+    @include animate( all, 320ms );
+    @include transform( scale(1) );
+    transform-origin: center top;
+    height: 100%;
+    z-index: 1;
+}
+
+.page-content {
+	.text-design {
+		padding: 1em 2.5em;
+		text-transform: uppercase;
+	}
+	.images {
+		display: block;
+		width: 100%;
+		height: 60vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		opacity: .8;
+		&:hover {
+			opacity: 1;
+			@include animate(all, .6s);
+		}
+	}
+	/*.text*/ 
+	p {
+		margin: 20px 0;
+		text-align: justify;
+		text-justify: inter-word;
+	}	
+}

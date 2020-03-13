@@ -1,0 +1,26 @@
+.design-format-archive {
+	margin: 3em 0 0 0;
+	.images {
+		display: block;
+		width: 100%;
+		height: 40vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		opacity: .8;
+		&:hover {
+			opacity: 1;
+			@include animate(all, .6s);
+		}
+	}
+	.content {
+		a {
+			text-decoration: none;
+			color: #212529;
+			&:hover {
+				color: $white;
+				@include animate(all, .6s);
+			}
+		}
+	}
+}
